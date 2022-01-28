@@ -1,0 +1,35 @@
+.article__topic {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 1px 0px 5px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #202020;
+}
+.article__topic__title {
+    font-size: 20px;
+    color: #cccccc;
+    padding: 10px 13px 5px;
+}
+.article__topic__topic {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px;
+}
+
+.article__topic__element {
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #cccccc;
+    background-color: #303030;
+}
+
+.article__topic__topic a:hover{
+    background-color: #404040;
+}

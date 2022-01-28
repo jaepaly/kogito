@@ -1,0 +1,6 @@
+.bookmark {
+    flex-grow: 1;
+    flex-direction: column;
+    height: auto;
+    background-color: #000000;
+}

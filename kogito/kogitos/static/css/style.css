@@ -1,0 +1,52 @@
+@import "reset.css";
+
+/*components*/
+@import "aside.css";
+@import "home.css";
+@import "article.css";
+@import "article__profile.css";
+@import "article__people.css";
+@import "article__topic.css";
+@import "search.css";
+@import "footer.css";
+@import "mylibrary__playlist.css";
+@import "mylibrary__people.css";
+@import "mylibrary__book.css";
+@import "bookmark.css";
+
+/*examples*/
+@import "ashlee_vance_book.css";
+@import "ashlee_vance_book_ch1.css";
+
+/*small desktop*/
+@media screen and (max-width:1190px){
+    .aside__row__text {
+        display:none;
+    }
+    .aside {
+        align-items: center;
+    }
+
+}
+
+/*tablets*/
+@media screen and (max-width: 1000px) {
+    .article {
+        display:none;
+    }
+}
+
+header, aside, main, article, footer {
+    background-color: black;
+    color: #909090;
+}
+
+.container {
+    display:flex;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    margin:auto;
+}
+
+
+
+

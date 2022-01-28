@@ -1,0 +1,26 @@
+.mylibrary__book {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    padding: 10px 40px 10px;
+}
+.mylibrary__book__element {
+    width: 200px;
+    height: auto;
+    background-color: #101010;
+    justify-content: center;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.mylibrary__book__photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+    object-fit: contain;
+    margin: 0px 20px 0px;
+}

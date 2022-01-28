@@ -1,0 +1,17 @@
+{% extends "common.html" %}
+
+{% block title %}정보 수정{% endblock %}
+
+{% block content %}
+<section>
+    <h1>참가 정보 등록/수정</h1>
+    <form action="{% url 'update_application' %}" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">등록</button>
+    </form>
+    {% if cancelable %}
+        <a href="{% url 'cancel_application' %}"><button>참가 취소</button></a>
+    {% endif %}
+</section>
+{% endblock %}

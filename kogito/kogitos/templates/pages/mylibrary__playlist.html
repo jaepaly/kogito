@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"">
+    <title>My Library_Playlist/Kogito</title>
+</head>
+
+<body>
+    <container class="container">
+        <aside class="aside">
+            <div class="aside__logo">
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="aside__row">
+                <a href="{% url 'index' %}"><i class="fas fa-home"></i><span class="aside__row__text">Home</span></a>
+            </div>
+            <div class="aside__row">
+                <a href="{% url 'search' %}"><i class="fas fa-search"></i><span class="aside__row__text">Search</span></a>
+            </div>
+            <div class="aside__row">
+                <a href="{% url 'mylibrary__playlist' %}"><i class="fas fa-book"></i><span class="aside__row__text">My library</span></a>
+            </div>
+            <div class="aside__row">
+                <a href="{% url 'bookmark' %}"><i class="fas fa-bookmark"></i><span class="aside__row__text">Bookmark</span></a>
+            </div>
+
+        </aside>
+
+        <main class="mylibrary">
+            <div class="mylibrary__header">
+                <a href="{% url 'mylibrary__playlist' %}" class="mylibrary__header__click">플레이리스트</a>
+                <a href="{% url 'mylibrary__people' %}" class="mylibrary__header__noclick">사람</a>
+                <a href="{% url 'mylibrary__book' %}" class="mylibrary__header__noclick">책</a>
+
+            </div>
+
+            <div class="mylibrary__myplaylist">
+                <div class="mylibrary__myplaylist__title">내가 생성한 플레이리스트</div>
+                <a href="#" class="mylibrary__myplaylist__content">
+                    <img class="mylibrary__content__photo" src="/static/img/architecture.jpeg"/>
+                    <div>My Favorite Quotes</div>
+                    <div class="mylibrary__text">만든 사람: Elon Musk</div>
+                </a>
+                <a href="#" class="mylibrary__myplaylist__content">
+                    <img class="mylibrary__content__photo" src="/static/img/chart.jpeg"/>
+                    <div>My Favorite Quotes</div>
+                    <div class="mylibrary__text">만든 사람: Elon Musk</div>
+                </a>
+                <a href="#" class="mylibrary__myplaylist__content">
+                    <img class="mylibrary__content__photo" src="/static/img/discover.jpg"/>
+                    <div>My Favorite Quotes</div>
+                    <div class="mylibrary__text">만든 사람: Elon Musk</div>
+                </a>
+            </div>
+            <div class="mylibrary__likeplaylist">
+                <div class="mylibrary__likeplaylist__title">내가 좋아요 표시한 플레이리스트</div>
+                <a href="#" class="mylibrary__likeplaylist__content">
+                    <img class="mylibrary__content__photo" src="/static/img/music.jpeg"/>
+                    <div>Music Essay Best</div>
+                    <div class="mylibrary__text">Kogito Made</div>
+                </a>
+                <a href="#" class="mylibrary__likeplaylist__content">
+                    <img class="mylibrary__content__photo" src="/static/img/philosophy.jpeg"/>
+                    <div>About Kant</div>
+                    <div class="mylibrary__text">Kogito Made</div>
+                </a>
+                <a href="#" class="mylibrary__likeplaylist__content">
+                    <img class="mylibrary__content__photo" src="/static/img/novel.jpeg"/>
+                    <div>Books I liked</div>
+                    <div class="mylibrary__text">Bill Gates</div>
+                </a>
+            </div>
+        </main>
+
+
+        <article class="article">
+            <a href="#" class="article__profile">
+                <img
+                    class="article__profile__photo"
+                    src="/static/img/elon_musk.jpeg">
+                <span class="article__profile__name">Elon Musk</span>
+                <span class="article__profile__btn"><i class="fas fa-caret-down"></i></span>
+            </a>
+            <div class="article__people">
+                <div class="article__people__title">Who to follow</div>
+                <a href="#" class="article__people__follow">
+                    <img class="article__people__follow__photo" src="/static/img/steve_jobs.jpeg">
+                    <span class="article__people__follow__name">Steve Jobs</span>
+                    <span class="article__people__follow__btn">follow</span>
+                </a>
+                <a href="#" class="article__people__follow">
+                    <img class="article__people__follow__photo" src="/static/img/tim_cook.jpeg">
+                    <span class="article__people__follow__name">Tim Cook</span>
+                    <span class="article__people__follow__btn">follow</span>
+                </a>
+                <a href="#" class="article__people__follow">
+                    <img class="article__people__follow__photo" src="/static/img/jeff_bezos.jpeg">
+                    <span class="article__people__follow__name">Jeff Bezos</span>
+                    <span class="article__people__follow__btn">follow</span>
+                </a>
+            </div>
+            <div class="article__topic">
+                <div class="article__topic__title"> Topic you might like </div>
+                <div class="article__topic__topic">
+                    <a href="#" class="article__topic__element">value investing<span> </span><i class="fas fa-times"></i></a>
+                    <a href="#" class="article__topic__element">economy<span> </span><i class="fas fa-times"></i></a>
+                    <a href="#" class="article__topic__element">stocks<span> </span><i class="fas fa-times"></i></a>
+                    <a href="#" class="article__topic__element">deep learning<span> </span><i class="fas fa-times"></i></a>
+                    <a href="#" class="article__topic__element">finance<span> </span><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+        </article>
+    </container>
+
+    <footer class="footer">
+        <div class="footer__content">Kogito.com</div>
+        <div class="footer__content">©copyright kogito</div>
+        <div class="footer__content">Learn More About Us</div>
+    </footer>
+
+    <script
+        src="https://kit.fontawesome.com/0a0dddc92c.js"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

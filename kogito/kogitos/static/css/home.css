@@ -1,0 +1,64 @@
+.home {
+    flex-grow: 1;
+    flex-direction: column;
+    height: auto;
+    background-color: #000000;
+}
+#home__news {
+    height: auto;
+    width: 750px;
+    background-image: url("https://blog.trazy.com/wp-content/uploads/2018/11/new-years-featured-image-scaled.jpg");
+    background-size: cover;
+    background-color: orange;
+    color: #cccccc;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+    margin: 15px 10px 40px;
+    border-radius: 10px;
+}
+#home__news__sub {
+    font-size: 20px;
+    color: #cccccc;
+}
+.home__section {
+    height: auto;
+    width: 770px;
+}
+.home__section__title {
+    font-size: 25px;
+    margin: 15px 10px 5px;
+}
+.home__section__content {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 265px);
+    column-gap: 30px;
+    row-gap: 10px;
+}
+.home__section__playlist {
+    display: flex;
+    width: 240px;
+    height: auto;
+    background-color: #202020;
+    margin: 10px;
+    border-radius: 7px 7px 7px 7px;
+}
+.home__section__playlist__photo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 7px 0px 0px 7px;
+}
+.home__section__playlist__title {
+    font-size: 20px;
+    align-self: center;
+    padding: 0px 10px 0px;
+}
+
+
+.home__section a:hover {
+    background-color: #303030;
+    color: #ffffff;
+}

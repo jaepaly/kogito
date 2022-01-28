@@ -1,0 +1,26 @@
+.article__profile {
+    display: flex;
+    height: 38px;
+    width: 170px;
+    border-radius: 19px;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0px 4px 0px;
+    background-color: #202020;
+}
+.article__profile__photo {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    align-self: center;
+}
+.article__profile__name {
+    align-self: center;
+    font-size: 17px;
+    color: #ffffff;
+}
+.article__profile__btn {
+    align-self: center;
+    font-size: 21px;
+}
